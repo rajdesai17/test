@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: [], // Remove 'lucide-react' if unnecessary
   },
   build: {
     rollupOptions: {
-      external: ['@supabase/supabase-js'],
+      external: [], // Remove '@supabase/supabase-js' if unnecessary
     },
   },
 });
